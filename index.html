@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Re:Zero Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+
+    /* Top image */
+    .header-image img {
+      width: 100%;
+      max-height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      min-height: calc(100vh - 260px);
+    }
+
+    /* Side navigation */
+    .sidebar {
+      width: 140px;
+      background-color: #020617;
+      padding: 15px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #e5e7eb;
+      background-color: #1e293b;
+      padding: 10px;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      background-color: #334155;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    h1 {
+      color: #60a5fa;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* Mobile fix */
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Image -->
+  <div class="header-image">
+    <img src="https://files.catbox.moe/orvyfc.jpg" alt="Re:Zero Banner">
+  </div>
+
+  <!-- Page Layout -->
+  <div class="container">
+
+    <!-- Side Buttons -->
+    <nav class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="links.html">Links</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <h1>Welcome to Re:Zero Info</h1>
+      <p>
+        Re:Zero Info is a fan-made website created to provide clear and organized
+        information about the Re:Zero universe. This site is focused on helping
+        fans understand characters, lore, and community resources in one simple place.
+      </p>
+      <p>
+        This project is not official and is made by fans for fans.
+      </p>
+    </main>
+
+  </div>
+
+</body>
+</html>
