@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Help Team | Re:Zero Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Side navigation */
+    .sidebar {
+      width: 140px;
+      background-color: #020617;
+      padding: 15px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #e5e7eb;
+      background-color: #1e293b;
+      padding: 10px;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      background-color: #334155;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 20px;
+      max-width: 750px;
+    }
+
+    h1 {
+      color: #60a5fa;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* Team cards */
+    .team-card {
+      background-color: #020617;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .team-card h2 {
+      margin: 0 0 6px 0;
+      font-size: 18px;
+      color: #38bdf8;
+    }
+
+    .team-card span {
+      font-size: 14px;
+      color: #cbd5f5;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Side Buttons -->
+    <nav class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="links.html">Links</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <!-- Help Team Content -->
+    <main class="content">
+      <h1>Help Team</h1>
+
+      <p>
+        The Help Team is responsible for assisting community members, maintaining order,
+        and ensuring that Re:Zero Info remains a safe and respectful space for everyone.
+        These individuals volunteer their time to support users and guide the community.
+      </p>
+
+      <p>
+        If you need help, have questions, or require guidance, our help team members
+        are here to assist you. Please treat them with respect.
+      </p>
+
+      <div class="team-card">
+        <h2>Mudau_t</h2>
+        <span>Founder • Administrator • Project Lead</span>
+      </div>
+
+      <div class="team-card">
+        <h2>HE IS KING 👑</h2>
+        <span>Senior Support • Community Manager</span>
+      </div>
+
+      <div class="team-card">
+        <h2>𝙎𝙃𝘼𝙆𝙀𝙕</h2>
+        <span>Support Team • Moderator</span>
+      </div>
+
+      <p>
+        Our help team works together to keep the community active, welcoming,
+        and helpful. Abuse of staff members or misuse of support channels will
+        not be tolerated.
+      </p>
+    </main>
+
+  </div>
+
+</body>
+</html>
