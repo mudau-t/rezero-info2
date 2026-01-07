@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Re:Zero Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Side navigation */
+    .sidebar {
+      width: 140px;
+      background-color: #020617;
+      padding: 15px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #e5e7eb;
+      background-color: #1e293b;
+      padding: 10px;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      background-color: #334155;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    h1 {
+      color: #60a5fa;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Side Buttons -->
+    <nav class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="links.html">Links</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <!-- About Content -->
+    <main class="content">
+      <h1>About This Website</h1>
+
+      <p>
+        Re:Zero Info is a fan-made informational website created for fans of
+        <strong>Re:Zero − Starting Life in Another World</strong>.
+        The goal of this site is to provide clear, simple, and organized information
+        about the series in one easy place.
+      </p>
+
+      <p>
+        This website focuses on characters, story details, helpful links,
+        and community support resources. It is designed to be easy to read,
+        mobile-friendly, and accessible to both new and long-time fans.
+      </p>
+
+      <p>
+        Re:Zero Info is <strong>not an official website</strong> and is not
+        affiliated with the creators, publishers, or studios behind Re:Zero.
+        All content is shared for fan and informational purposes only.
+      </p>
+
+      <p>
+        This project exists to support the community and help fans learn
+        more about the Re:Zero universe.
+      </p>
+    </main>
+
+  </div>
+
+</body>
+</html>
