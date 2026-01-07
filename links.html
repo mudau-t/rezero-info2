@@ -13,9 +13,17 @@
       color: #e5e7eb;
     }
 
+    /* Top image */
+    .header-image img {
+      width: 100%;
+      max-height: 240px;
+      object-fit: cover;
+      display: block;
+    }
+
     .container {
       display: flex;
-      min-height: 100vh;
+      min-height: calc(100vh - 240px);
     }
 
     /* Side navigation */
@@ -35,6 +43,111 @@
       padding: 10px;
       text-align: center;
       border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      background-color: #334155;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    h1 {
+      color: #60a5fa;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .link-card {
+      display: block;
+      background-color: #020617;
+      padding: 18px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: #e5e7eb;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .link-card:hover {
+      background-color: #1e293b;
+    }
+
+    .link-card span {
+      display: block;
+      margin-top: 6px;
+      font-size: 13px;
+      color: #93c5fd;
+    }
+
+    /* Mobile */
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Image -->
+  <div class="header-image">
+    <img src="https://files.catbox.moe/orvyfc.jpg" alt="Re:Zero Banner">
+  </div>
+
+  <div class="container">
+
+    <!-- Side Buttons -->
+    <nav class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="links.html">Links</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <!-- Links Content -->
+    <main class="content">
+      <h1>Community Links</h1>
+
+      <a class="link-card"
+         href="https://chat.whatsapp.com/EJjjbFxlRx0KIpDwpzpRD1"
+         target="_blank">
+        Our Community
+        <span>Join our WhatsApp community</span>
+      </a>
+
+      <a class="link-card"
+         href="https://whatsapp.com/channel/0029Vb7EosF9hXFBUaF5PT1E"
+         target="_blank">
+        Our Channel
+        <span>Follow our WhatsApp channel</span>
+      </a>
+
+      <a class="link-card"
+         href="https://discord.gg/cqz3RNtwY"
+         target="_blank">
+        Our Discord Server
+        <span>Join the Discord community</span>
+      </a>
+
+    </main>
+
+  </div>
+
+</body>
+</html>      border-radius: 6px;
       font-size: 14px;
     }
 
