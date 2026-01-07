@@ -63,6 +63,7 @@
       margin-top: 0;
     }
 
+    /* Clean link cards */
     .link-card {
       display: block;
       background-color: #020617;
@@ -71,12 +72,16 @@
       margin-bottom: 15px;
       text-decoration: none;
       color: #e5e7eb;
-      font-size: 16px;
       text-align: center;
     }
 
     .link-card:hover {
       background-color: #1e293b;
+    }
+
+    .link-card strong {
+      font-size: 17px;
+      color: #38bdf8;
     }
 
     .link-card span {
@@ -86,7 +91,7 @@
       color: #93c5fd;
     }
 
-    /* Mobile */
+    /* Mobile layout */
     @media (max-width: 700px) {
       .container {
         flex-direction: column;
@@ -117,28 +122,28 @@
       <a href="support.html">Support</a>
     </nav>
 
-    <!-- Links Content -->
+    <!-- Page Content -->
     <main class="content">
       <h1>Community Links</h1>
 
       <a class="link-card"
          href="https://chat.whatsapp.com/EJjjbFxlRx0KIpDwpzpRD1"
          target="_blank">
-        Our Community
+        <strong>Our Community</strong>
         <span>Join our WhatsApp community</span>
       </a>
 
       <a class="link-card"
          href="https://whatsapp.com/channel/0029Vb7EosF9hXFBUaF5PT1E"
          target="_blank">
-        Our Channel
+        <strong>Our Channel</strong>
         <span>Follow our WhatsApp channel</span>
       </a>
 
       <a class="link-card"
          href="https://discord.gg/cqz3RNtwY"
          target="_blank">
-        Our Discord Server
+        <strong>Our Discord Server</strong>
         <span>Join the Discord community</span>
       </a>
 
